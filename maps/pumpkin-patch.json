@@ -1,0 +1,384 @@
+{
+  "id": "pumpkin",
+  "name": "Pumpkin Patch",
+  "mascot": "ghost",
+  "night": true,
+  "sky": "#2a1b4e",
+  "sun": {
+    "color": "#9fb4ff",
+    "intensity": 0.9,
+    "position": [
+      -4,
+      8,
+      5
+    ]
+  },
+  "ambient": {
+    "sky": "#6e5bb5",
+    "ground": "#1d1230",
+    "intensity": 0.9
+  },
+  "fill": {
+    "radius": 5,
+    "inner": "hex/dirt",
+    "outer": "hex/water"
+  },
+  "tiles": [
+    {
+      "q": 0,
+      "r": -2,
+      "m": "hex/stone-hill"
+    },
+    {
+      "q": -2,
+      "r": 2,
+      "m": "hex/stone-hill"
+    },
+    {
+      "q": 2,
+      "r": -2,
+      "m": "hex/stone"
+    },
+    {
+      "q": -2,
+      "r": 0,
+      "m": "hex/stone"
+    },
+    {
+      "q": 2,
+      "r": 0,
+      "m": "hex/grass"
+    },
+    {
+      "q": 3,
+      "r": -3,
+      "m": "hex/stone"
+    },
+    {
+      "q": -3,
+      "r": 3,
+      "m": "hex/stone-hill"
+    },
+    {
+      "q": 0,
+      "r": 3,
+      "m": "hex/stone"
+    },
+    {
+      "q": -3,
+      "r": 0,
+      "m": "hex/stone"
+    },
+    {
+      "q": 4,
+      "r": -4,
+      "m": "hex/stone"
+    },
+    {
+      "q": -4,
+      "r": 4,
+      "m": "hex/stone-hill"
+    },
+    {
+      "q": 0,
+      "r": 4,
+      "m": "hex/stone"
+    },
+    {
+      "q": -4,
+      "r": 0,
+      "m": "hex/stone"
+    },
+    {
+      "q": 3,
+      "r": -4,
+      "m": "hex/stone-hill"
+    },
+    {
+      "q": 5,
+      "r": -4,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": -5,
+      "r": 5,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": 1,
+      "r": 4,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": -3,
+      "r": -2,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": 4,
+      "r": -5,
+      "m": "hex/water-rocks"
+    }
+  ],
+  "props": [
+    {
+      "q": 1,
+      "r": -2,
+      "m": "graveyard/crypt-small",
+      "s": 0.62,
+      "rot": 3,
+      "dz": -0.05
+    },
+    {
+      "q": -1,
+      "r": -1,
+      "m": "graveyard/pine",
+      "s": 0.42,
+      "dx": -0.3,
+      "dz": -0.2
+    },
+    {
+      "q": -2,
+      "r": 1,
+      "m": "graveyard/pine-crooked",
+      "s": 0.4,
+      "dx": 0.1,
+      "dz": 0.1
+    },
+    {
+      "q": 2,
+      "r": -1,
+      "m": "graveyard/pine",
+      "s": 0.38,
+      "dx": 0.3,
+      "dz": 0.2
+    },
+    {
+      "q": 1,
+      "r": 1,
+      "m": "graveyard/pine-crooked",
+      "s": 0.36,
+      "dx": 0.35,
+      "dz": 0.25
+    },
+    {
+      "q": 0,
+      "r": -1,
+      "m": "graveyard/lightpost-single",
+      "s": 0.7,
+      "dx": -0.35,
+      "dz": 0.1
+    },
+    {
+      "q": 0,
+      "r": 1,
+      "m": "graveyard/fence",
+      "s": 0.8,
+      "dx": 0.0,
+      "dz": 0.45
+    },
+    {
+      "q": -1,
+      "r": 2,
+      "m": "graveyard/fence-gate",
+      "s": 0.8,
+      "dx": 0.0,
+      "dz": 0.45
+    },
+    {
+      "q": 1,
+      "r": 0,
+      "m": "graveyard/fence",
+      "s": 0.8,
+      "dx": 0.4,
+      "dz": -0.3,
+      "rot": 1
+    },
+    {
+      "q": 2,
+      "r": -2,
+      "m": "graveyard/hay-bale-bundled",
+      "s": 0.4,
+      "dx": -0.15
+    },
+    {
+      "q": 2,
+      "r": -2,
+      "m": "graveyard/hay-bale",
+      "s": 0.4,
+      "dx": 0.25,
+      "dz": 0.2,
+      "rot": 2
+    },
+    {
+      "q": -2,
+      "r": 0,
+      "m": "graveyard/rocks",
+      "s": 0.5,
+      "dx": -0.1
+    },
+    {
+      "q": 0,
+      "r": 0,
+      "m": "graveyard/pumpkin-carved",
+      "s": 1.0,
+      "dx": 0.4,
+      "dz": 0.25,
+      "glow": true
+    },
+    {
+      "q": -1,
+      "r": 1,
+      "m": "graveyard/pumpkin",
+      "s": 0.9,
+      "dx": -0.35,
+      "dz": 0.2
+    },
+    {
+      "q": 1,
+      "r": -1,
+      "m": "graveyard/pumpkin-tall-carved",
+      "s": 1.0,
+      "dx": -0.4,
+      "dz": 0.35,
+      "glow": true
+    },
+    {
+      "q": -1,
+      "r": 0,
+      "m": "graveyard/pumpkin-tall",
+      "s": 0.9,
+      "dx": 0.35,
+      "dz": -0.3
+    },
+    {
+      "q": 2,
+      "r": 0,
+      "m": "graveyard/candle-multiple",
+      "s": 0.9,
+      "dx": -0.3,
+      "dz": 0.2
+    },
+    {
+      "q": 0,
+      "r": 2,
+      "m": "graveyard/lantern-glass",
+      "s": 0.9,
+      "dx": 0.3,
+      "dz": -0.2
+    },
+    {
+      "q": 3,
+      "r": -3,
+      "m": "graveyard/pine",
+      "s": 0.4,
+      "dx": 0.3,
+      "dz": 0.2
+    },
+    {
+      "q": -3,
+      "r": 0,
+      "m": "graveyard/lantern-candle",
+      "s": 0.9,
+      "dx": 0.3,
+      "dz": -0.2
+    },
+    {
+      "q": 0,
+      "r": -3,
+      "m": "graveyard/pumpkin-tall",
+      "s": 0.9,
+      "dx": 0.3
+    }
+  ],
+  "lights": [
+    {
+      "q": 0,
+      "r": 0,
+      "dx": 0.4,
+      "dz": 0.25,
+      "dy": 0.35,
+      "color": "#ffa63a",
+      "intensity": 2.5,
+      "distance": 3
+    },
+    {
+      "q": 1,
+      "r": -1,
+      "dx": -0.4,
+      "dz": 0.35,
+      "dy": 0.4,
+      "color": "#ffa63a",
+      "intensity": 2.0,
+      "distance": 3
+    },
+    {
+      "q": 0,
+      "r": -1,
+      "dx": -0.35,
+      "dz": 0.1,
+      "dy": 1.0,
+      "color": "#ffe3a3",
+      "intensity": 2.5,
+      "distance": 3.5
+    }
+  ],
+  "pets": [
+    {
+      "q": 3,
+      "r": -1,
+      "id": "cat",
+      "dx": -0.2
+    },
+    {
+      "q": -3,
+      "r": 1,
+      "id": "fox",
+      "dx": -0.2
+    },
+    {
+      "q": 0,
+      "r": 3,
+      "id": "bunny",
+      "dx": -0.2
+    },
+    {
+      "q": 2,
+      "r": -4,
+      "id": "bee",
+      "dx": -0.2
+    },
+    {
+      "q": -2,
+      "r": 4,
+      "id": "panda",
+      "dx": -0.2
+    },
+    {
+      "q": 0,
+      "r": -1,
+      "id": "ghost",
+      "m": "graveyard/character-ghost",
+      "s": 0.95,
+      "dx": 0.3,
+      "dy": 0.3,
+      "float": true
+    }
+  ],
+  "unlocks": [
+    "crab",
+    "koala",
+    "beaver"
+  ],
+  "countItem": {
+    "m": "graveyard/pumpkin",
+    "s": 1.5,
+    "word": "pumpkin"
+  },
+  "sizeItem": {
+    "m": "graveyard/pumpkin",
+    "big": 2.3,
+    "small": 1.0,
+    "word": "pumpkin"
+  }
+}

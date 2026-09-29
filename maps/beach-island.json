@@ -1,0 +1,287 @@
+{
+  "id": "beach",
+  "name": "Beach Island",
+  "mascot": "penguin",
+  "sky": "#9fe3ff",
+  "sun": {
+    "color": "#fffbe6",
+    "intensity": 2.6,
+    "position": [
+      5,
+      9,
+      4
+    ]
+  },
+  "ambient": {
+    "sky": "#c9f0ff",
+    "ground": "#d9b27a",
+    "intensity": 1.2
+  },
+  "fill": {
+    "radius": 5,
+    "inner": "hex/sand",
+    "outer": "hex/water"
+  },
+  "tiles": [
+    {
+      "q": 1,
+      "r": -1,
+      "m": "hex/water"
+    },
+    {
+      "q": 0,
+      "r": -1,
+      "m": "hex/water"
+    },
+    {
+      "q": 2,
+      "r": -2,
+      "m": "hex/water"
+    },
+    {
+      "q": -2,
+      "r": 2,
+      "m": "hex/sand-rocks"
+    },
+    {
+      "q": 2,
+      "r": 0,
+      "m": "hex/sand-rocks"
+    },
+    {
+      "q": -2,
+      "r": 0,
+      "m": "hex/grass"
+    },
+    {
+      "q": -1,
+      "r": -1,
+      "m": "hex/grass"
+    },
+    {
+      "q": 0,
+      "r": -2,
+      "m": "hex/building-dock",
+      "rot": 2
+    },
+    {
+      "q": 3,
+      "r": -3,
+      "m": "hex/water"
+    },
+    {
+      "q": -3,
+      "r": 3,
+      "m": "hex/sand-rocks"
+    },
+    {
+      "q": 0,
+      "r": 3,
+      "m": "hex/grass"
+    },
+    {
+      "q": 3,
+      "r": 0,
+      "m": "hex/water"
+    },
+    {
+      "q": -3,
+      "r": 0,
+      "m": "hex/sand-rocks"
+    },
+    {
+      "q": 4,
+      "r": -4,
+      "m": "hex/water"
+    },
+    {
+      "q": -4,
+      "r": 4,
+      "m": "hex/sand-rocks"
+    },
+    {
+      "q": 0,
+      "r": 4,
+      "m": "hex/grass"
+    },
+    {
+      "q": 4,
+      "r": 0,
+      "m": "hex/water"
+    },
+    {
+      "q": -4,
+      "r": 0,
+      "m": "hex/sand-rocks"
+    },
+    {
+      "q": 3,
+      "r": -4,
+      "m": "hex/water"
+    },
+    {
+      "q": 5,
+      "r": -5,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": -5,
+      "r": 0,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": 0,
+      "r": 5,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": 5,
+      "r": 0,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": -3,
+      "r": -2,
+      "m": "hex/water-rocks"
+    }
+  ],
+  "props": [
+    {
+      "q": 1,
+      "r": -1,
+      "m": "hex/unit-ship",
+      "s": 1.4,
+      "dx": 0.1,
+      "dz": 0.05,
+      "dy": 0.1,
+      "float": true
+    },
+    {
+      "q": -2,
+      "r": 0,
+      "m": "forest/tree",
+      "s": 0.5,
+      "dx": -0.2,
+      "dz": -0.2
+    },
+    {
+      "q": -1,
+      "r": -1,
+      "m": "forest/plant",
+      "s": 0.7,
+      "dx": 0.2,
+      "dz": 0.2
+    },
+    {
+      "q": 1,
+      "r": 1,
+      "m": "forest/plant",
+      "s": 0.7,
+      "dx": 0.3,
+      "dz": -0.3
+    },
+    {
+      "q": -1,
+      "r": 2,
+      "m": "forest/stones",
+      "s": 0.45,
+      "dx": 0.3,
+      "dz": 0.25
+    },
+    {
+      "q": 0,
+      "r": 2,
+      "m": "forest/flag",
+      "s": 0.6,
+      "dx": 0.35,
+      "dz": 0.3
+    },
+    {
+      "q": 2,
+      "r": 2,
+      "m": "forest/stones",
+      "s": 0.5,
+      "dx": 0.3,
+      "dz": 0.2
+    },
+    {
+      "q": -2,
+      "r": -1,
+      "m": "forest/tree",
+      "s": 0.5,
+      "dx": 0.3,
+      "dz": -0.2
+    },
+    {
+      "q": 3,
+      "r": -3,
+      "m": "hex/unit-ship",
+      "s": 1.3,
+      "dx": 0.1,
+      "dy": 0.1,
+      "float": true
+    }
+  ],
+  "pets": [
+    {
+      "q": 0,
+      "r": 0,
+      "id": "penguin",
+      "dx": -0.2
+    },
+    {
+      "q": 3,
+      "r": -1,
+      "id": "crab",
+      "dx": -0.2
+    },
+    {
+      "q": 0,
+      "r": -1,
+      "id": "fish",
+      "dx": -0.3,
+      "dz": 0.15,
+      "float": true
+    },
+    {
+      "q": -3,
+      "r": 1,
+      "id": "parrot",
+      "dx": -0.2
+    },
+    {
+      "q": 0,
+      "r": 3,
+      "id": "monkey",
+      "dx": -0.2
+    },
+    {
+      "q": 2,
+      "r": -4,
+      "id": "elephant",
+      "dx": -0.2
+    },
+    {
+      "q": -2,
+      "r": 4,
+      "id": "polar",
+      "dx": -0.2
+    }
+  ],
+  "unlocks": [
+    "dog",
+    "giraffe",
+    "lion"
+  ],
+  "countItem": {
+    "m": "forest/stones",
+    "s": 0.6,
+    "word": "rock"
+  },
+  "sizeItem": {
+    "m": "forest/plant",
+    "big": 1.8,
+    "small": 0.8,
+    "word": "plant"
+  }
+}

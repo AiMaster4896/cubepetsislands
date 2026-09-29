@@ -1,0 +1,302 @@
+{
+  "id": "farm",
+  "name": "Sunny Farm",
+  "mascot": "cow",
+  "sky": "#8fd3ff",
+  "sun": {
+    "color": "#fff4d6",
+    "intensity": 2.4,
+    "position": [
+      4,
+      8,
+      5
+    ]
+  },
+  "ambient": {
+    "sky": "#bfe6ff",
+    "ground": "#6f9a3a",
+    "intensity": 1.2
+  },
+  "fill": {
+    "radius": 5,
+    "inner": "hex/grass",
+    "outer": "hex/water"
+  },
+  "tiles": [
+    {
+      "q": 1,
+      "r": -1,
+      "m": "hex/building-farm",
+      "rot": 3
+    },
+    {
+      "q": -1,
+      "r": 0,
+      "m": "hex/building-mill",
+      "rot": 0
+    },
+    {
+      "q": 2,
+      "r": -1,
+      "m": "hex/building-sheep",
+      "rot": 2
+    },
+    {
+      "q": -1,
+      "r": 2,
+      "m": "hex/building-house",
+      "rot": 1
+    },
+    {
+      "q": 0,
+      "r": -2,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": 1,
+      "r": -2,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -2,
+      "r": 1,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -2,
+      "r": 0,
+      "m": "hex/grass-hill"
+    },
+    {
+      "q": 2,
+      "r": 0,
+      "m": "hex/grass-hill"
+    },
+    {
+      "q": 0,
+      "r": 2,
+      "m": "hex/sand"
+    },
+    {
+      "q": 1,
+      "r": 1,
+      "m": "hex/sand"
+    },
+    {
+      "q": -2,
+      "r": 2,
+      "m": "hex/sand-rocks"
+    },
+    {
+      "q": 2,
+      "r": -2,
+      "m": "hex/water"
+    },
+    {
+      "q": 3,
+      "r": -3,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -3,
+      "r": 3,
+      "m": "hex/sand"
+    },
+    {
+      "q": 0,
+      "r": 3,
+      "m": "hex/sand"
+    },
+    {
+      "q": 3,
+      "r": -1,
+      "m": "hex/grass-hill"
+    },
+    {
+      "q": -3,
+      "r": 1,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -1,
+      "r": -2,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": 4,
+      "r": -4,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -4,
+      "r": 4,
+      "m": "hex/sand"
+    },
+    {
+      "q": 0,
+      "r": 4,
+      "m": "hex/sand"
+    },
+    {
+      "q": 4,
+      "r": -1,
+      "m": "hex/grass-hill"
+    },
+    {
+      "q": -4,
+      "r": 1,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -1,
+      "r": -3,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": 2,
+      "r": -4,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -4,
+      "r": 2,
+      "m": "hex/grass"
+    },
+    {
+      "q": 5,
+      "r": -5,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": 0,
+      "r": 5,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": -5,
+      "r": 1,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": 4,
+      "r": 1,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": -2,
+      "r": -3,
+      "m": "hex/water-rocks"
+    }
+  ],
+  "props": [
+    {
+      "q": 0,
+      "r": -1,
+      "m": "forest/tree",
+      "dx": 0.35,
+      "dz": -0.2,
+      "s": 0.55
+    },
+    {
+      "q": -1,
+      "r": 1,
+      "m": "forest/tree-high",
+      "dx": -0.3,
+      "dz": 0.25,
+      "s": 0.5
+    },
+    {
+      "q": 1,
+      "r": 1,
+      "m": "graveyard/hay-bale",
+      "dx": -0.25,
+      "dz": 0.1,
+      "s": 0.32
+    },
+    {
+      "q": 1,
+      "r": 1,
+      "m": "graveyard/hay-bale",
+      "dx": -0.4,
+      "dz": 0.32,
+      "s": 0.32,
+      "rot": 1
+    },
+    {
+      "q": -3,
+      "r": 3,
+      "m": "forest/tree",
+      "s": 0.55,
+      "dx": 0.3,
+      "dz": 0.2
+    },
+    {
+      "q": -3,
+      "r": 0,
+      "m": "forest/tree-high",
+      "s": 0.5,
+      "dx": 0.3,
+      "dz": -0.2
+    }
+  ],
+  "pets": [
+    {
+      "q": 0,
+      "r": 0,
+      "id": "cow",
+      "dx": -0.2
+    },
+    {
+      "q": 0,
+      "r": 3,
+      "id": "pig",
+      "dx": -0.2
+    },
+    {
+      "q": -2,
+      "r": 4,
+      "id": "chick",
+      "dx": -0.2
+    },
+    {
+      "q": 4,
+      "r": -3,
+      "id": "dog",
+      "dx": -0.2
+    },
+    {
+      "q": -4,
+      "r": 0,
+      "id": "cat",
+      "dx": -0.2
+    },
+    {
+      "q": 3,
+      "r": 1,
+      "id": "bunny",
+      "dx": -0.2
+    },
+    {
+      "q": 1,
+      "r": 2,
+      "id": "hog",
+      "dx": -0.2
+    }
+  ],
+  "unlocks": [
+    "tiger",
+    "lion",
+    "giraffe"
+  ],
+  "countItem": {
+    "m": "graveyard/hay-bale",
+    "s": 0.5,
+    "word": "hay bale"
+  },
+  "sizeItem": {
+    "m": "forest/tree",
+    "big": 0.75,
+    "small": 0.36,
+    "word": "tree"
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "id": "forest",
+  "name": "Forest Camp",
+  "mascot": "deer",
+  "sky": "#ffd39a",
+  "sun": {
+    "color": "#ffd2a0",
+    "intensity": 2.2,
+    "position": [
+      -5,
+      6,
+      5
+    ]
+  },
+  "ambient": {
+    "sky": "#ffe2b8",
+    "ground": "#4d7a2a",
+    "intensity": 1.1
+  },
+  "fill": {
+    "radius": 5,
+    "inner": "hex/grass",
+    "outer": "hex/water"
+  },
+  "tiles": [
+    {
+      "q": 0,
+      "r": -2,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": 1,
+      "r": -2,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": 2,
+      "r": -2,
+      "m": "hex/grass"
+    },
+    {
+      "q": -1,
+      "r": -1,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -2,
+      "r": 0,
+      "m": "hex/grass"
+    },
+    {
+      "q": -2,
+      "r": 1,
+      "m": "hex/grass-hill"
+    },
+    {
+      "q": 2,
+      "r": -1,
+      "m": "hex/grass-hill"
+    },
+    {
+      "q": -2,
+      "r": 2,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": 2,
+      "r": 0,
+      "m": "hex/grass"
+    },
+    {
+      "q": 1,
+      "r": 1,
+      "m": "hex/river-straight",
+      "rot": 0
+    },
+    {
+      "q": 0,
+      "r": 2,
+      "m": "hex/sand"
+    },
+    {
+      "q": 3,
+      "r": -3,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -3,
+      "r": 3,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": 0,
+      "r": 3,
+      "m": "hex/grass-hill"
+    },
+    {
+      "q": 3,
+      "r": 0,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -3,
+      "r": 0,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -1,
+      "r": -2,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": 4,
+      "r": -4,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -4,
+      "r": 4,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": 0,
+      "r": 4,
+      "m": "hex/grass-hill"
+    },
+    {
+      "q": 4,
+      "r": 0,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -4,
+      "r": 0,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -1,
+      "r": -3,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": 2,
+      "r": -4,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -3,
+      "r": -1,
+      "m": "hex/grass-forest"
+    },
+    {
+      "q": -5,
+      "r": 5,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": 5,
+      "r": -5,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": 2,
+      "r": 3,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": -4,
+      "r": -1,
+      "m": "hex/water-rocks"
+    },
+    {
+      "q": 0,
+      "r": -5,
+      "m": "hex/water-rocks"
+    }
+  ],
+  "props": [
+    {
+      "q": 0,
+      "r": -1,
+      "m": "forest/tent",
+      "s": 0.62,
+      "rot": 3,
+      "dx": 0.1,
+      "dz": -0.05
+    },
+    {
+      "q": 0,
+      "r": 0,
+      "m": "graveyard/fire-basket",
+      "s": 1.1,
+      "dx": 0.4,
+      "dz": 0.3
+    },
+    {
+      "q": -1,
+      "r": 0,
+      "m": "forest/rocks-low",
+      "s": 0.5,
+      "dx": -0.3,
+      "dz": -0.25
+    },
+    {
+      "q": 1,
+      "r": -1,
+      "m": "forest/tree-high",
+      "s": 0.5,
+      "dx": 0.35,
+      "dz": -0.1
+    },
+    {
+      "q": -1,
+      "r": 2,
+      "m": "forest/tree",
+      "s": 0.5,
+      "dx": -0.3,
+      "dz": 0.1
+    },
+    {
+      "q": 1,
+      "r": 0,
+      "m": "forest/stones",
+      "s": 0.5,
+      "dx": 0.35,
+      "dz": 0.3
+    },
+    {
+      "q": 0,
+      "r": 2,
+      "m": "forest/plant",
+      "s": 0.7,
+      "dx": 0.3,
+      "dz": 0.2
+    },
+    {
+      "q": -1,
+      "r": 1,
+      "m": "forest/flag",
+      "s": 0.6,
+      "dx": -0.35,
+      "dz": -0.3
+    },
+    {
+      "q": 1,
+      "r": 1,
+      "m": "forest/bridge",
+      "s": 0.75,
+      "rot": 0,
+      "dy": 0.05
+    },
+    {
+      "q": 0,
+      "r": -3,
+      "m": "forest/stones",
+      "s": 0.5,
+      "dx": 0.3
+    }
+  ],
+  "lights": [
+    {
+      "q": 0,
+      "r": 0,
+      "dx": 0.4,
+      "dz": 0.3,
+      "dy": 0.35,
+      "color": "#ff9a3a",
+      "intensity": 2.0,
+      "distance": 3
+    }
+  ],
+  "pets": [
+    {
+      "q": 3,
+      "r": -1,
+      "id": "deer",
+      "dx": -0.2
+    },
+    {
+      "q": -3,
+      "r": 1,
+      "id": "fox",
+      "dx": -0.2
+    },
+    {
+      "q": -2,
+      "r": 4,
+      "id": "beaver",
+      "dx": -0.2
+    },
+    {
+      "q": 4,
+      "r": -3,
+      "id": "bunny",
+      "dx": -0.2
+    },
+    {
+      "q": 3,
+      "r": 1,
+      "id": "koala",
+      "dx": -0.2
+    },
+    {
+      "q": 1,
+      "r": 2,
+      "id": "caterpillar",
+      "dx": -0.2
+    },
+    {
+      "q": -2,
+      "r": -2,
+      "id": "panda",
+      "dx": -0.2
+    }
+  ],
+  "unlocks": [
+    "hog",
+    "cat",
+    "elephant"
+  ],
+  "countItem": {
+    "m": "forest/stones",
+    "s": 0.6,
+    "word": "rock"
+  },
+  "sizeItem": {
+    "m": "forest/tree",
+    "big": 0.75,
+    "small": 0.36,
+    "word": "tree"
+  }
+}

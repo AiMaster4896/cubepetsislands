@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Cube Pets">
+<meta name="theme-color" content="#8fd3ff">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<link rel="icon" href="assets/icons/icon-192.png">
+<title>Cube Pets Islands</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+
+<div id="hud">
+  <button id="exit" class="round-btn" hidden aria-label="Exit to start screen"><svg viewBox="0 0 24 24"><path d="M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-2H6V6h4zm4 3-1.4 1.4L15.2 11H9v2h6.2l-2.6 2.6L14 17l5-5z"/></svg></button>
+  <button id="feed" class="round-btn" hidden aria-label="Feed the animals"><svg viewBox="0 0 24 24"><path d="M4 9h16l-1.5 9a2 2 0 0 1-2 1.7h-9A2 2 0 0 1 5.5 18zM7 7a5 5 0 0 1 10 0h-2a3 3 0 0 0-6 0z"/></svg></button>
+  <button id="seed" class="round-btn" hidden aria-label="Plant flowers"><svg viewBox="0 0 24 24"><path d="M12 22v-8m0 0c-4 0-6-3-6-7 4 0 6 3 6 7zm0 0c4 0 6-3 6-7-4 0-6 3-6 7zM12 3a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg></button>
+  <button id="party" class="round-btn" hidden aria-label="Party"><svg viewBox="0 0 24 24"><path d="M12 2l2.6 6.3 6.8.5-5.2 4.4 1.7 6.6L12 16.2 6.1 19.8l1.7-6.6L2.6 8.8l6.8-.5z"/></svg></button>
+  <button id="night" class="round-btn" hidden aria-label="Day and night"><svg viewBox="0 0 24 24"><path d="M12 5a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm0-4v3m0 16v3M1 12h3m16 0h3M4.2 4.2l2.1 2.1m11.4 11.4 2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="#f9a825" stroke-width="2" fill="#f9a825"/></svg></button>
+  <button id="callall" class="round-btn" hidden aria-label="Call the animals home"><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1zM12 13.5l1.6 1.1c.9-.9 1.9-1.6 2.4-2.2-.3-.9-1.3-1.2-2-.6L12 13z"/></svg></button>
+  <button id="home" class="round-btn" hidden aria-label="Back to islands"><svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></button>
+  <button id="book" class="round-btn" hidden aria-label="Sticker book"><svg viewBox="0 0 24 24"><path d="M4 4h6a3 3 0 0 1 2 1 3 3 0 0 1 2-1h6v15h-6a2 2 0 0 0-2 1 2 2 0 0 0-2-1H4z"/></svg></button>
+  <div id="stars" hidden><div id="star-row"><span id="star-icon">★</span><span id="star-count">0</span></div><div id="star-goal"></div></div>
+  <div id="prompt" hidden>
+    <img id="prompt-img" alt="">
+    <div id="prompt-dots"></div>
+    <div id="prompt-text"></div>
+  </div>
+  <div id="cheer" hidden><div id="cheer-text">Hooray!</div><img id="cheer-img" alt="" hidden></div>
+  <div id="gear-zone"></div>
+</div>
+
+<div id="overlay">
+  <div id="title">Cube Pets Islands</div>
+  <div id="bar"><div id="fill"></div></div>
+  <div id="profiles" hidden></div>
+  <div id="new-player" hidden>
+    <label id="name-wrap"><span>What's your name?</span><input id="name" type="text" maxlength="20" autocomplete="off" autocapitalize="words" placeholder="Type name"></label>
+    <div id="avatar-wrap">
+      <button type="button" class="avatar" data-avatar="girl"><img alt=""><span>Girl</span></button>
+      <button type="button" class="avatar" data-avatar="boy"><img alt=""><span>Boy</span></button>
+    </div>
+  </div>
+  <button id="start" hidden>Play!</button>
+</div>
+
+<div id="fade"></div>
+
+<div id="stickers" class="panel" hidden>
+  <div class="panel-head"><span>My animals</span><button class="close" data-close="stickers" aria-label="Close">×</button></div>
+  <div id="sticker-grid"></div>
+</div>
+
+<div id="settings" class="panel" hidden>
+  <div class="panel-head"><span>Grown-ups</span><button class="close" data-close="settings" aria-label="Close">×</button></div>
+  <label><input type="checkbox" id="s-voice"> Spoken prompts</label>
+  <label>Voice <select id="s-voicename"><option value="">Automatic</option></select> <button type="button" id="s-voicetest">Try</button></label>
+  <label><input type="checkbox" id="s-sound"> Sound effects</label>
+  <div class="sub">Rounds</div>
+  <label><input type="checkbox" id="s-find"> Find the animal</label>
+  <label><input type="checkbox" id="s-colour"> Colours</label>
+  <label><input type="checkbox" id="s-count"> Counting</label>
+  <label><input type="checkbox" id="s-size"> Big and small</label>
+  <label>Rounds per visit <input type="number" id="s-rounds" min="3" max="12"></label>
+  <label>Child's name <input type="text" id="s-name" maxlength="20"></label>
+  <label>Avatar <select id="s-avatar"><option value="girl">Girl</option><option value="boy">Boy</option></select></label>
+  <div class="row"><button id="s-reset">Reset progress</button> <button id="s-delete">Delete this player</button></div>
+  <p class="tiny">Open this panel by holding a finger on the bottom-left corner for 2 seconds.</p>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
